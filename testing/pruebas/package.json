@@ -1,0 +1,30 @@
+{
+  "name": "project-cypress-framework",
+  "version": "1.0.0",
+  "description": "project cypress cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "javascript",
+    "cucumber",
+    "author:",
+    "Renato",
+    "Cabezas"
+  ],
+  "author": "Renato Cabezas",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^11.2.0",
+    "esbuild": "^0.15.18"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/steps-definitions/*.{js, ts}"
+    ]
+  }
+}
